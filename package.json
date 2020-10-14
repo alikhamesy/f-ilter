@@ -1,0 +1,25 @@
+{
+  "name": "discbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -d dist src",
+    "build-rnd": "babel -d dist src rnd",
+    "start": "npm run build && node dist/index.js",
+    "serve": "node dist/index.js"
+  },
+  "author": "Ali Khamesy",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "nodemon": "^2.0.4"
+  }
+}
